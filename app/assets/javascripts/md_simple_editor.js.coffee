@@ -97,8 +97,8 @@ insertAtCaret = (areaId, text) ->
 
 initializeEditor = ->
   md_simple_editor()
-  $(document).off 'turbolinks:load page:load ready', initializeEditor
+  $(document).off 'page:load ready', initializeEditor
   $('.preview_md').click ->
     preview()
 
-$(document).on 'turbolinks:load page:load ready', initializeEditor
+$(document).on 'turbolinks:load', initializeEditor
