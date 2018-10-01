@@ -55,9 +55,6 @@ module MdSimpleEditor
               button_tag(type: 'button', class: "#{@md_builder.default_class} md_bold") do
                 fa_icon 'bold'
               end +
-              button_tag(:type => 'button', class: "#{@md_builder.default_class} md_list-ul") do
-                fa_icon 'list-ul'
-              end +
               button_tag(:type => 'button', class: "#{@md_builder.default_class} md_list-ol") do
                 fa_icon 'list-ol'
               end +
@@ -71,7 +68,7 @@ module MdSimpleEditor
                 fa_icon 'table'
               end +
               button_tag(:type => 'button', class: "#{@md_builder.default_class} md_square") do
-                fa_icon 'square'
+                fa_icon 'code'
               end +
               button_tag(:type => 'button', class: "#{@md_builder.default_class} md_minus") do
                 fa_icon 'minus'
